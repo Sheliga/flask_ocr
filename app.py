@@ -8,7 +8,9 @@ app = Flask(__name__, static_folder='static', template_folder='templates')
 UPLOAD_FOLDER = os.path.join(os.getcwd(),'upload') 
 
 def extrairTextoImagem(img):
+    pytesseract.pytesseract.tesseract_cmd =r'C:/Program Files/Tesseract-OCR/tesseract.exe'
     custom_config = r'--oem 3 --psm 6'
+    pytesseract.pytesseract.tesseract_cmd
     text = pytesseract.image_to_string(img, config=custom_config)
     return text
 
