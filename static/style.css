@@ -15,3 +15,20 @@ input{
     margin: 24px;
     padding: 24px;
 }
+.dropzone {
+    background: white;
+    border: 2px dashed rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    height: 200px;
+    width: 100%;
+    padding: 54px;
+    box-sizing: border-box;
+}
+
+.fallback {
+  margin-top: 10px;
+  border: 1px dashed #aaa;
+  padding: 10px;
+  color: #aaa;
+  text-align: center;
+}
